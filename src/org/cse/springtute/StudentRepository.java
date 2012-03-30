@@ -2,15 +2,40 @@ package org.cse.springtute;
 
 import java.util.List;
 
+/**
+ * 
+ * @author Tharindu Amila
+ */
 public interface StudentRepository {
 
-	void saveStudent(Student stu);
+    /**
+     * 
+     * @param stu
+     */
+    void saveStudent(Student stu);
 
-	void deleteStudent(Student stu);
+        /**
+         * 
+         * @param stu
+         */
+        void deleteStudent(Student stu);
 
-	Student findStudent(long regNumber);
+        /**
+         * 
+         * @param regNumber
+         * @return
+         */
+        Student findStudent(long regNumber);
 
-	void updateStudent(Student stu);
+        /**
+         * 
+         * @param stu
+         */
+        void updateStudent(Student stu);
 
-	List<Student> findAllStudents();
+        /**
+         * 
+         * @return
+         */
+        List<Student> findAllStudents();
 }

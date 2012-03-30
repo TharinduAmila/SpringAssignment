@@ -21,9 +21,16 @@ public class StudentManagementSystemTest {
     private static Student stu1;
     private static Student stu2;
     private static Student stu3;
+    /**
+     * 
+     */
     public StudentManagementSystemTest() {
     }
 
+    /**
+     * 
+     * @throws Exception
+     */
     @BeforeClass
     public static void setUpClass() throws Exception {
         sms=new StudentManagementSystem();
@@ -32,14 +39,24 @@ public class StudentManagementSystemTest {
         stu3=new Student(3, "Prasad", "Perera", "address3");
     }
 
+    /**
+     * 
+     * @throws Exception
+     */
     @AfterClass
     public static void tearDownClass() throws Exception {
     }
 
+    /**
+     * 
+     */
     @Before
     public void setUp() {
     }
 
+    /**
+     * 
+     */
     @After
     public void tearDown() {
     }
@@ -50,6 +67,9 @@ public class StudentManagementSystemTest {
     // @Test
     // public void hello() {}
 
+    /**
+     * 
+     */
     @Test
     public void testAddNewStudent(){
         sms.registerStudent(stu1);

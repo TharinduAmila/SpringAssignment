@@ -2,8 +2,16 @@ package org.cse.springtute;
 
 import org.springframework.context.support.*;
 
+/**
+ * 
+ * @author Tharindu Amila
+ */
 public class SmsStarter {
 
+    /**
+     * 
+     * @param args
+     */
     public static void main(String[] args) {
         StudentManagementSystem sms;
 
